@@ -4,6 +4,7 @@
 // findMax5([14,12,38,17,10,36,12,29,45,34,48,22]) => [48, 45, 38, 36, 34]
 // findMax5([10,11,2,30,22,6,8,9,11,12,22]) => [30, 22, 22, 12, 11]
 
+// Compare function
 const compare = (a, b) => b - a
 
 const findMax5 = (arr) => {
@@ -45,16 +46,16 @@ formContact.addEventListener('submit', (e) => {
     e.preventDefault()
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
-    // Flag
-    let checked = false
+    // Flag error
+    let checkError = false
     // Check require    
     for (const [key, value] of Object.entries(formProps)){
         if(value === ''){
-            checked = true;
+            checkError = true;
             alert(`Nội dung ${key} không được để trống `)
         }
     }
-    if(!checked){
+    if(!checkError){
         console.log(formProps)
     }
 })
