@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Internship Test</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            margin-top: 50px;
+            width: 300px;
+        }
+        form > div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formContact">
+        <div>
+            <label>Họ và tên</label>
+            <input name="fullname" type="text" placeholder="Nhập họ và tên" value="">
+        </div>
+        <div>
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Nhập email" value="">
+        </div>
+        <div>
+            <label>Số điện thoại</label>
+            <input name="phone" type="text" placeholder="Nhập số điện thoại" value="">
+        </div>
+        <div>
+            <label>Nội dung liên hệ</label>
+            <textarea name="content" placeholder="Nội dung liên hệ"></textarea>
+
+        </div>
+        <div>
+            <button type="button" class="btn-clear">Clear</button>
+            <button class="btn-submit" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+</html>
